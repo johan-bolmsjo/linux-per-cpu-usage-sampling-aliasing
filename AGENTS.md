@@ -8,17 +8,18 @@
 
 ### Scoping rules
 
-- Use the minimum scope for definitions based on their use.
+- Use the minimum scope possible for definitions.
 
-### Comment style
+### Documentation style
 
-- Never use abbreviations except exempted ones.
-- Use Go's comment style for types, which leads with the name of the function or type it applies to.
-- Document the current code behavior.
-- Use self contained comments: never refer to external documents or task instructions in comments.
-- Never mention historical details or circumstances.
+- Use plain language without contrived metaphors.
+- Never use abbreviations except explicitly accepted ones.
+- Use Go's comment style for types: Lead with the name of the function or type it applies to.
+- Comment what is, not what was!
+- Never comment historical details or circumstances.
+- Never refer to external documents or task instructions in comments.
 
-#### Exempt abbreviations in comments
+#### Accepted abbreviations
 
 - e.g. (exempli gratia: for example)
 - i.e. (id est: that is)
@@ -27,9 +28,9 @@
 ### Design methodologies
 
 - Use consistent naming of functions, types and variables.
-- Apply separation of concerns: Consider the responsibilities of code modules for clear interfaces.
+- Apply separation of concerns: Consider the responsibilities of code modules with semantically clear interfaces.
 - Keep code "DRY": Avoid excessive copy paste.
-- Avoid inline magic constants: give constant names to provide context.
+- Avoid inline magic constants: Name constants to provide context.
 
 ### Unit testing
 
